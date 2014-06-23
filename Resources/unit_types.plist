@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>unitTypeArray</key>
+	<array>
+		<string>Acceleration</string>
+		<string>Angle</string>
+		<string>Area</string>
+		<string>Concentration</string>
+		<string>Density</string>
+		<string>Energy</string>
+		<string>Flow</string>
+		<string>Force</string>
+		<string>Length</string>
+		<string>Light</string>
+		<string>Mass</string>
+		<string>Memory</string>
+		<string>Power</string>
+		<string>Pressure</string>
+		<string>Speed</string>
+		<string>Temperature</string>
+		<string>Thermal Conductivity</string>
+		<string>Time</string>
+		<string>Torque</string>
+		<string>Volume</string>
+		<string>Volume-dry</string>
+	</array>
+</dict>
+</plist>

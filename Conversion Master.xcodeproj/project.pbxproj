@@ -19,6 +19,14 @@
 		5D0BCF9119577AB30065FFA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0BCF7919577AB30065FFA4 /* UIKit.framework */; };
 		5D0BCF9919577AB30065FFA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D0BCF9719577AB30065FFA4 /* InfoPlist.strings */; };
 		5D0BCF9B19577AB30065FFA4 /* Conversion_MasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCF9A19577AB30065FFA4 /* Conversion_MasterTests.m */; };
+		5D0BCFA619577B380065FFA4 /* FTUnitSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */; };
+		5D0BCFA819577B6D0065FFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0BCFA719577B6D0065FFA4 /* Main.storyboard */; };
+		5D0BCFAB19577C670065FFA4 /* unit_types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D0BCFAA19577C670065FFA4 /* unit_types.plist */; };
+		5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */; };
+		5D0BCFB31957B2C70065FFA4 /* acceleration_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D0BCFB21957B2C70065FFA4 /* acceleration_data.plist */; };
+		5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */; };
+		5D0BCFBD1957D39A0065FFA4 /* FTGainConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */; };
+		5D0BCFC01957DA620065FFA4 /* FTConverterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFBF1957DA620065FFA4 /* FTConverterFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,20 @@
 		5D0BCF9619577AB30065FFA4 /* Conversion MasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Conversion MasterTests-Info.plist"; sourceTree = "<group>"; };
 		5D0BCF9819577AB30065FFA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D0BCF9A19577AB30065FFA4 /* Conversion_MasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conversion_MasterTests.m; sourceTree = "<group>"; };
+		5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUnitSelectViewController.h; sourceTree = "<group>"; };
+		5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUnitSelectViewController.m; sourceTree = "<group>"; };
+		5D0BCFA719577B6D0065FFA4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5D0BCFAA19577C670065FFA4 /* unit_types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = unit_types.plist; sourceTree = "<group>"; };
+		5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUnitSelectCell.h; sourceTree = "<group>"; };
+		5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUnitSelectCell.m; sourceTree = "<group>"; };
+		5D0BCFB21957B2C70065FFA4 /* acceleration_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = acceleration_data.plist; sourceTree = "<group>"; };
+		5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversionViewController.h; sourceTree = "<group>"; };
+		5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversionViewController.m; sourceTree = "<group>"; };
+		5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConverter.h; sourceTree = "<group>"; };
+		5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGainConverter.h; sourceTree = "<group>"; };
+		5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGainConverter.m; sourceTree = "<group>"; };
+		5D0BCFBE1957DA620065FFA4 /* FTConverterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConverterFactory.h; sourceTree = "<group>"; };
+		5D0BCFBF1957DA620065FFA4 /* FTConverterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConverterFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +99,7 @@
 		5D0BCF6919577AB20065FFA4 = {
 			isa = PBXGroup;
 			children = (
+				5D0BCFA919577BC00065FFA4 /* Resources */,
 				5D0BCF7B19577AB30065FFA4 /* Conversion Master */,
 				5D0BCF9419577AB30065FFA4 /* Conversion MasterTests */,
 				5D0BCF7419577AB30065FFA4 /* Frameworks */,
@@ -107,10 +130,22 @@
 		5D0BCF7B19577AB30065FFA4 /* Conversion Master */ = {
 			isa = PBXGroup;
 			children = (
+				5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */,
 				5D0BCF8419577AB30065FFA4 /* FTAppDelegate.h */,
 				5D0BCF8519577AB30065FFA4 /* FTAppDelegate.m */,
 				5D0BCF8719577AB30065FFA4 /* Images.xcassets */,
 				5D0BCF7C19577AB30065FFA4 /* Supporting Files */,
+				5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */,
+				5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */,
+				5D0BCFA719577B6D0065FFA4 /* Main.storyboard */,
+				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
+				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
+				5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */,
+				5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */,
+				5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */,
+				5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */,
+				5D0BCFBE1957DA620065FFA4 /* FTConverterFactory.h */,
+				5D0BCFBF1957DA620065FFA4 /* FTConverterFactory.m */,
 			);
 			path = "Conversion Master";
 			sourceTree = "<group>";
@@ -142,6 +177,15 @@
 				5D0BCF9719577AB30065FFA4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D0BCFA919577BC00065FFA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D0BCFB21957B2C70065FFA4 /* acceleration_data.plist */,
+				5D0BCFAA19577C670065FFA4 /* unit_types.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +264,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0BCFB31957B2C70065FFA4 /* acceleration_data.plist in Resources */,
+				5D0BCFA819577B6D0065FFA4 /* Main.storyboard in Resources */,
 				5D0BCF8019577AB30065FFA4 /* InfoPlist.strings in Resources */,
+				5D0BCFAB19577C670065FFA4 /* unit_types.plist in Resources */,
 				5D0BCF8819577AB30065FFA4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0BCF8619577AB30065FFA4 /* FTAppDelegate.m in Sources */,
+				5D0BCFC01957DA620065FFA4 /* FTConverterFactory.m in Sources */,
 				5D0BCF8219577AB30065FFA4 /* main.m in Sources */,
+				5D0BCFA619577B380065FFA4 /* FTUnitSelectViewController.m in Sources */,
+				5D0BCFBD1957D39A0065FFA4 /* FTGainConverter.m in Sources */,
+				5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */,
+				5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +490,7 @@
 				5D0BCFA019577AB30065FFA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D0BCFA119577AB30065FFA4 /* Build configuration list for PBXNativeTarget "Conversion MasterTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +499,7 @@
 				5D0BCFA319577AB30065FFA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

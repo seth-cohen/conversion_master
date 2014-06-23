@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>G</string>
+	<key>map</key>
+	<dict>
+		<key>centimeter/sec^2</key>
+		<real>980.6688</real>
+		<key>foot/sec^2</key>
+		<real>32.17417</real>
+		<key>G</key>
+		<integer>1</integer>
+		<key>meter/sec^2</key>
+		<real>9.806649999999999</real>
+		<key>mile/hour second</key>
+		<real>21.93689</real>
+		<key>millimeter/sec^2</key>
+		<real>9806.688</real>
+	</dict>
+</dict>
+</plist>
