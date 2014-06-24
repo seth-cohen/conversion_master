@@ -6,18 +6,18 @@
 	<string>G</string>
 	<key>map</key>
 	<dict>
-		<key>centimeter/sec^2</key>
-		<real>980.6688</real>
-		<key>foot/sec^2</key>
-		<real>32.17417</real>
 		<key>G</key>
-		<integer>1</integer>
+		<real>1</real>
+		<key>centimeter/sec^2</key>
+		<real>980.66880000000003</real>
+		<key>foot/sec^2</key>
+		<real>32.174169999999997</real>
 		<key>meter/sec^2</key>
-		<real>9.806649999999999</real>
+		<real>9.8066499999999994</real>
 		<key>mile/hour second</key>
-		<real>21.93689</real>
+		<real>21.936889999999998</real>
 		<key>millimeter/sec^2</key>
-		<real>9806.688</real>
+		<real>9806.6880000000001</real>
 	</dict>
 </dict>
 </plist>

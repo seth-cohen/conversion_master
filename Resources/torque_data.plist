@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>newton meter</string>
+	<key>map</key>
+	<dict>
+		<key>dyne centimeter</key>
+		<real>10000000</real>
+		<key>gram-force centimeter</key>
+		<real>10197.200000000001</real>
+		<key>kilogram-force centimeter</key>
+		<real>0.1019716</real>
+		<key>kilonewton meter</key>
+		<real>0.001</real>
+		<key>kilopond meter</key>
+		<real>0.1019716</real>
+		<key>meganewton meter</key>
+		<real>9.9999999999999995e-07</real>
+		<key>micronewton meter</key>
+		<real>1000000</real>
+		<key>millinewton meter</key>
+		<real>1000</real>
+		<key>newton meter</key>
+		<real>1</real>
+		<key>ounce-force foot</key>
+		<real>11.80097</real>
+		<key>ounce-force inch</key>
+		<real>141.61160000000001</real>
+		<key>pound-force foot</key>
+		<real>0.73756100000000002</real>
+		<key>pound-force inch</key>
+		<real>8.8507499999999997</real>
+	</dict>
+</dict>
+</plist>

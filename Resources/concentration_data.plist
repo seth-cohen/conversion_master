@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>mole/liter</string>
+	<key>map</key>
+	<dict>
+		<key>kilomole/meter^3</key>
+		<real>1</real>
+		<key>micromole/cm^3</key>
+		<real>1000</real>
+		<key>micromole/dm^3</key>
+		<real>1000000</real>
+		<key>micromole/liter</key>
+		<real>1000000</real>
+		<key>millimole/cm^3</key>
+		<real>1</real>
+		<key>millimole/dm^3</key>
+		<real>1000</real>
+		<key>millimole/liter</key>
+		<real>1000</real>
+		<key>millimole/meter^3</key>
+		<real>1000000</real>
+		<key>millimole/milliliter</key>
+		<real>1</real>
+		<key>mole/decimeter^3</key>
+		<real>1</real>
+		<key>mole/liter</key>
+		<real>1</real>
+		<key>mole/meter^3</key>
+		<real>1000</real>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>gallon</string>
+	<key>map</key>
+	<dict>
+		<key>cubic centimeter</key>
+		<real>3785.4119999999998</real>
+		<key>cubic foot</key>
+		<real>0.13368060000000001</real>
+		<key>cubic inch</key>
+		<real>231</real>
+		<key>cubic meter</key>
+		<real>0.0037854120000000002</real>
+		<key>cubic yard</key>
+		<real>0.0049511319999999996</real>
+		<key>cup</key>
+		<real>16</real>
+		<key>dram</key>
+		<real>1023.9930000000001</real>
+		<key>drop</key>
+		<real>58369.650000000001</real>
+		<key>gallon</key>
+		<real>1</real>
+		<key>gallon (UK)</key>
+		<real>0.83267380000000002</real>
+		<key>liter</key>
+		<real>3.785412</real>
+		<key>milliliter</key>
+		<real>3785.4119999999998</real>
+		<key>minim (US)</key>
+		<real>61440</real>
+		<key>ounce (oz)</key>
+		<real>128</real>
+		<key>ounce (oz)(UK)</key>
+		<real>133.2278</real>
+		<key>pint (pt)</key>
+		<real>8</real>
+		<key>pint (pt)(UK)</key>
+		<real>6.6613930000000003</real>
+		<key>quart</key>
+		<real>4</real>
+		<key>tablespoon</key>
+		<real>256</real>
+		<key>teaspon</key>
+		<real>768</real>
+	</dict>
+</dict>
+</plist>

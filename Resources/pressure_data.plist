@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>bar</string>
+	<key>map</key>
+	<dict>
+		<key>PSI</key>
+		<real>14.503769999999999</real>
+		<key>atmosphere</key>
+		<real>0.98692329999999995</real>
+		<key>bar</key>
+		<real>1</real>
+		<key>cm Hg</key>
+		<real>75.006169999999997</real>
+		<key>dyne/centimeter^2</key>
+		<real>1000000</real>
+		<key>in Hg</key>
+		<real>29.529990000000002</real>
+		<key>kilogram/cm^2</key>
+		<real>1.0197160000000001</real>
+		<key>kilogram/meter^2</key>
+		<real>10197.16</real>
+		<key>kilopascal</key>
+		<real>100</real>
+		<key>megapascal</key>
+		<real>0.10000000000000001</real>
+		<key>microbar</key>
+		<real>1000000</real>
+		<key>millibar</key>
+		<real>1000</real>
+		<key>mm Hg</key>
+		<real>750.06169999999997</real>
+		<key>pascal</key>
+		<real>100000</real>
+		<key>pound/foot^2</key>
+		<real>2088.5430000000001</real>
+		<key>ton/foot^2</key>
+		<real>1.0442720000000001</real>
+		<key>ton/inch^2</key>
+		<real>0.0072518870000000003</real>
+		<key>torr</key>
+		<real>750.06169999999997</real>
+	</dict>
+</dict>
+</plist>

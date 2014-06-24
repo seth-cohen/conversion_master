@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>watt</string>
+	<key>map</key>
+	<dict>
+		<key>BTU/hour</key>
+		<real>3.4151790000000002</real>
+		<key>BTU/minute</key>
+		<real>0.056919650000000002</real>
+		<key>BTU/second</key>
+		<real>0.00094866079999999999</real>
+		<key>calorie/second</key>
+		<real>0.23905850000000001</real>
+		<key>horsepower</key>
+		<real>0.0013410220000000001</real>
+		<key>kilowatt</key>
+		<real>0.001</real>
+		<key>megawatt</key>
+		<real>9.9999999999999995e-07</real>
+		<key>pound-feed/minute</key>
+		<real>44.253729999999997</real>
+		<key>pound-feet/second</key>
+		<real>0.7375621</real>
+		<key>watt</key>
+		<real>1</real>
+	</dict>
+</dict>
+</plist>

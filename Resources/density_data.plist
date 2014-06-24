@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>gram/centimeter^3</string>
+	<key>map</key>
+	<dict>
+		<key>gram/centimeter^3</key>
+		<real>1</real>
+		<key>gram/meter^3</key>
+		<real>1000000</real>
+		<key>kilogram/meter^3</key>
+		<real>1000</real>
+		<key>milligram/meter^3</key>
+		<real>1000000000</real>
+		<key>ounce/gallon</key>
+		<real>133.5265</real>
+		<key>pound/foot^3</key>
+		<real>62.427959999999999</real>
+		<key>pound/inch^3</key>
+		<real>0.036127289999999999</real>
+		<key>ton/yard</key>
+		<real>1.4417690000000001</real>
+	</dict>
+</dict>
+</plist>

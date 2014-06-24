@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>kilogram</string>
+	<key>map</key>
+	<dict>
+		<key>carat</key>
+		<real>5000</real>
+		<key>grain</key>
+		<real>15432.4</real>
+		<key>gram</key>
+		<real>1000</real>
+		<key>kilogram</key>
+		<real>1</real>
+		<key>megagram</key>
+		<real>0.001</real>
+		<key>microgram</key>
+		<real>1000000000</real>
+		<key>milligram</key>
+		<real>1000000</real>
+		<key>ounce (avdp)</key>
+		<real>35.273919999999997</real>
+		<key>ounce (troy)</key>
+		<real>32.150500000000001</real>
+		<key>pennyweight</key>
+		<real>643.01400000000001</real>
+		<key>pound (advp)</key>
+		<real>2.2046199999999998</real>
+		<key>pound (troy)</key>
+		<real>2.6792090000000002</real>
+		<key>stone</key>
+		<real>0.1574728</real>
+		<key>ton (long)</key>
+		<real>0.00098419999999999996</real>
+		<key>ton (short)</key>
+		<real>0.0011023000000000001</real>
+		<key>tonne (metric) </key>
+		<real>0.001</real>
+	</dict>
+</dict>
+</plist>

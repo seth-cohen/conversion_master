@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>day</string>
+	<key>map</key>
+	<dict>
+		<key>century</key>
+		<real>2.739726e-05</real>
+		<key>day</key>
+		<real>1</real>
+		<key>decade</key>
+		<real>0.00027397260000000003</real>
+		<key>fortnight</key>
+		<real>0.071428569999999997</real>
+		<key>hour</key>
+		<real>24</real>
+		<key>leap-year</key>
+		<real>0.0027322399999999999</real>
+		<key>millennium</key>
+		<real>2.7397260000000001e-06</real>
+		<key>millisecond</key>
+		<real>86400000</real>
+		<key>minute</key>
+		<real>1440</real>
+		<key>month (30 day)</key>
+		<real>0.033333330000000001</real>
+		<key>nanosecond</key>
+		<real>86400000000000</real>
+		<key>second</key>
+		<real>86400</real>
+		<key>week</key>
+		<real>0.14285709999999999</real>
+		<key>year</key>
+		<real>0.0027397260000000001</real>
+	</dict>
+</dict>
+</plist>

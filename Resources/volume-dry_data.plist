@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>liter</string>
+	<key>map</key>
+	<dict>
+		<key>barrel</key>
+		<real>0.0086484890000000005</real>
+		<key>bushel</key>
+		<real>0.028377590000000001</real>
+		<key>liter</key>
+		<real>1</real>
+		<key>peck</key>
+		<real>0.1135104</real>
+		<key>pint (pt)</key>
+		<real>1.8161659999999999</real>
+		<key>quart</key>
+		<real>0.90808290000000003</real>
+	</dict>
+</dict>
+</plist>

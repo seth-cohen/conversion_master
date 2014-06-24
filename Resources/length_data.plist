@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>meter</string>
+	<key>map</key>
+	<dict>
+		<key>centimeter</key>
+		<real>100</real>
+		<key>dekameter</key>
+		<real>0.10000000000000001</real>
+		<key>foot</key>
+		<real>3.2808299999999999</real>
+		<key>furlong</key>
+		<real>0.0049709699999999999</real>
+		<key>hectometer</key>
+		<real>0.01</real>
+		<key>inch</key>
+		<real>39.369959999999999</real>
+		<key>kilometer</key>
+		<real>0.001</real>
+		<key>lightyear</key>
+		<real>1.057023e-16</real>
+		<key>meter</key>
+		<real>1</real>
+		<key>micrometer</key>
+		<real>1000000</real>
+		<key>mil</key>
+		<real>39370.099999999999</real>
+		<key>mile</key>
+		<real>0.00062137119999999997</real>
+		<key>millimeter</key>
+		<real>1000</real>
+		<key>nanometer</key>
+		<real>1000000000</real>
+		<key>nautical mile</key>
+		<real>0.00053995680000000002</real>
+		<key>parsec</key>
+		<real>3.2407830000000002e-17</real>
+		<key>yard</key>
+		<real>1.09361</real>
+	</dict>
+</dict>
+</plist>

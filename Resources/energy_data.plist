@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>joule</string>
+	<key>map</key>
+	<dict>
+		<key>BTU</key>
+		<real>0.00094781710000000003</real>
+		<key>attojoule</key>
+		<real>1e+18</real>
+		<key>calorie</key>
+		<real>0.2388459</real>
+		<key>dyne-centimeter</key>
+		<real>10000000</real>
+		<key>electron volt</key>
+		<real>6.241457e+18</real>
+		<key>erg</key>
+		<real>10000000</real>
+		<key>gigajoule</key>
+		<real>1.0000000000000001e-09</real>
+		<key>gigawatt-hour</key>
+		<real>2.777778e-13</real>
+		<key>gram force-centimeter</key>
+		<real>10197.16</real>
+		<key>horsepower-hour</key>
+		<real>3.7250609999999998e-07</real>
+		<key>joule</key>
+		<real>1</real>
+		<key>kilocalorie</key>
+		<real>0.00023884589999999999</real>
+		<key>kiloelectron volt</key>
+		<real>6241457000000000</real>
+		<key>kilojoule</key>
+		<real>0.001</real>
+		<key>kilowatt-hour</key>
+		<real>2.777778e-07</real>
+		<key>megaelectron volt</key>
+		<real>6241457000000</real>
+		<key>megajoule</key>
+		<real>9.9999999999999995e-07</real>
+		<key>megawatt-hour</key>
+		<real>2.7777780000000002e-10</real>
+		<key>microjoule</key>
+		<real>1000000</real>
+		<key>millijoule</key>
+		<real>1000</real>
+		<key>nanojoule</key>
+		<real>1000000000</real>
+		<key>newton-meter</key>
+		<real>1</real>
+		<key>ounce force-inch</key>
+		<real>141.61189999999999</real>
+		<key>pound force-foot</key>
+		<real>0.7375621</real>
+		<key>pound force-inch</key>
+		<real>8.8507459999999991</real>
+		<key>poundal-foot</key>
+		<real>23.730360000000001</real>
+		<key>therm</key>
+		<real>9.4781340000000003e-09</real>
+		<key>watt-hour</key>
+		<real>0.0002777778</real>
+		<key>watt-second</key>
+		<real>1</real>
+	</dict>
+</dict>
+</plist>

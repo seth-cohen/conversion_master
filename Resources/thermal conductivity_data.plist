@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>watt/(meter.°K)</string>
+	<key>map</key>
+	<dict>
+		<key>BTU[IT]-ft/(s.ft^2.°F)</key>
+		<real>0.57778931700000002</real>
+		<key>BTU[IT]-in/(h.ft^2.°F)</key>
+		<real>6.9334717990000003</real>
+		<key>BTU[IT]-in/(s.ft^2.°F)</key>
+		<real>0.0019259640000000001</real>
+		<key>BTU[th]-ft/(s.ft^2.°F)</key>
+		<real>0.57817598199999998</real>
+		<key>BTU[th]-in/(h.ft^2.°F)</key>
+		<real>6.9381117889999997</real>
+		<key>BTU[th]-in/(s.ft^2.°F)</key>
+		<real>0.0019272530000000001</real>
+		<key>calorie[IT]/(s.cm.°C)</key>
+		<real>0.0023884589999999999</real>
+		<key>calorie[th]/(s.cm.°C)</key>
+		<real>0.0023900570000000001</real>
+		<key>kcalorie[IT]/(h.m.°C)</key>
+		<real>0.85984522799999996</real>
+		<key>kcalorie[th]/(h.m.°C)</key>
+		<real>0.86042065000000001</real>
+		<key>kilowatt/(h.meter.°K)</key>
+		<real>0.001</real>
+		<key>watt/(centimeter.°K)</key>
+		<real>0.01</real>
+		<key>watt/(meter.°K)</key>
+		<real>1</real>
+	</dict>
+</dict>
+</plist>

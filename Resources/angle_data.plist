@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>degree</string>
+	<key>map</key>
+	<dict>
+		<key>degree</key>
+		<real>1</real>
+		<key>grad</key>
+		<real>1.111111</real>
+		<key>minute</key>
+		<real>60</real>
+		<key>radian</key>
+		<real>0.01745329</real>
+		<key>revolution</key>
+		<real>0.0027777700000000002</real>
+		<key>right angle</key>
+		<real>0.0027777700000000002</real>
+		<key>second</key>
+		<real>3600</real>
+	</dict>
+</dict>
+</plist>

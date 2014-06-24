@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>Celsius</string>
+	<key>map</key>
+	<dict>
+		<key>Celsius</key>
+		<real>1</real>
+		<key>Fahrenheit</key>
+		<real>1.8</real>
+		<key>Kelvin</key>
+		<real>1</real>
+		<key>Rankine</key>
+		<real>1.8</real>
+	</dict>
+</dict>
+</plist>

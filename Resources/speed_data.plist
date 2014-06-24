@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basis</key>
+	<string>mile/hour</string>
+	<key>map</key>
+	<dict>
+		<key>C</key>
+		<real>1.491165e-09</real>
+		<key>centimeter/hour</key>
+		<real>160934.39999999999</real>
+		<key>centimeter/minute</key>
+		<real>2682.2399999999998</real>
+		<key>centimeter/second</key>
+		<real>44.704000000000001</real>
+		<key>foot/hour</key>
+		<real>5280</real>
+		<key>foot/minute</key>
+		<real>88</real>
+		<key>foot/second</key>
+		<real>1.4666669999999999</real>
+		<key>kilometer/hour</key>
+		<real>1.6093440000000001</real>
+		<key>kilometer/minute</key>
+		<real>0.0268224</real>
+		<key>kilometer/second</key>
+		<real>0.00044704</real>
+		<key>knot</key>
+		<real>0.86897619999999998</real>
+		<key>mach</key>
+		<real>0.0013487</real>
+		<key>meter/hour</key>
+		<real>1609.3440000000001</real>
+		<key>meter/minute</key>
+		<real>26.822399999999998</real>
+		<key>meter/second</key>
+		<real>0.44703999999999999</real>
+		<key>mile/hour</key>
+		<real>1</real>
+		<key>mile/minute</key>
+		<real>0.016666670000000001</real>
+		<key>mile/second</key>
+		<real>0.0002777778</real>
+	</dict>
+</dict>
+</plist>
