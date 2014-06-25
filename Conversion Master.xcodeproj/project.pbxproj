@@ -24,7 +24,6 @@
 		5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */; };
 		5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */; };
 		5D0BCFBD1957D39A0065FFA4 /* FTGainConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */; };
-		5D0BCFC01957DA620065FFA4 /* FTConverterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFBF1957DA620065FFA4 /* FTConverterFactory.m */; };
 		5DE6125A19590AEC0060B807 /* acceleration_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6124419590AEC0060B807 /* acceleration_data.plist */; };
 		5DE6125B19590AEC0060B807 /* angle_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6124519590AEC0060B807 /* angle_data.plist */; };
 		5DE6125C19590AEC0060B807 /* area_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6124619590AEC0060B807 /* area_data.plist */; };
@@ -47,6 +46,8 @@
 		5DE6126D19590AED0060B807 /* unit_types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6125719590AEC0060B807 /* unit_types.plist */; };
 		5DE6126E19590AED0060B807 /* volume_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6125819590AEC0060B807 /* volume_data.plist */; };
 		5DE6126F19590AED0060B807 /* volume-dry_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6125919590AEC0060B807 /* volume-dry_data.plist */; };
+		5DE61272195B45FE0060B807 /* FTConversionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE61271195B45FE0060B807 /* FTConversionCell.m */; };
+		5DE61274195B86D40060B807 /* FTConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE61273195B86D40060B807 /* FTConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +87,6 @@
 		5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConverter.h; sourceTree = "<group>"; };
 		5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGainConverter.h; sourceTree = "<group>"; };
 		5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGainConverter.m; sourceTree = "<group>"; };
-		5D0BCFBE1957DA620065FFA4 /* FTConverterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConverterFactory.h; sourceTree = "<group>"; };
-		5D0BCFBF1957DA620065FFA4 /* FTConverterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConverterFactory.m; sourceTree = "<group>"; };
 		5DE6124419590AEC0060B807 /* acceleration_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = acceleration_data.plist; sourceTree = "<group>"; };
 		5DE6124519590AEC0060B807 /* angle_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = angle_data.plist; sourceTree = "<group>"; };
 		5DE6124619590AEC0060B807 /* area_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area_data.plist; sourceTree = "<group>"; };
@@ -110,6 +109,9 @@
 		5DE6125719590AEC0060B807 /* unit_types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = unit_types.plist; sourceTree = "<group>"; };
 		5DE6125819590AEC0060B807 /* volume_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = volume_data.plist; sourceTree = "<group>"; };
 		5DE6125919590AEC0060B807 /* volume-dry_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "volume-dry_data.plist"; sourceTree = "<group>"; };
+		5DE61270195B45FE0060B807 /* FTConversionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversionCell.h; sourceTree = "<group>"; };
+		5DE61271195B45FE0060B807 /* FTConversionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversionCell.m; sourceTree = "<group>"; };
+		5DE61273195B86D40060B807 /* FTConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,22 +172,23 @@
 		5D0BCF7B19577AB30065FFA4 /* Conversion Master */ = {
 			isa = PBXGroup;
 			children = (
-				5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */,
 				5D0BCF8419577AB30065FFA4 /* FTAppDelegate.h */,
 				5D0BCF8519577AB30065FFA4 /* FTAppDelegate.m */,
-				5D0BCF8719577AB30065FFA4 /* Images.xcassets */,
-				5D0BCF7C19577AB30065FFA4 /* Supporting Files */,
-				5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */,
-				5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */,
-				5D0BCFA719577B6D0065FFA4 /* Main.storyboard */,
+				5DE61270195B45FE0060B807 /* FTConversionCell.h */,
+				5DE61271195B45FE0060B807 /* FTConversionCell.m */,
 				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
 				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
-				5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */,
-				5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */,
+				5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */,
+				5DE61273195B86D40060B807 /* FTConverter.m */,
 				5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */,
 				5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */,
-				5D0BCFBE1957DA620065FFA4 /* FTConverterFactory.h */,
-				5D0BCFBF1957DA620065FFA4 /* FTConverterFactory.m */,
+				5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */,
+				5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */,
+				5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */,
+				5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */,
+				5D0BCF8719577AB30065FFA4 /* Images.xcassets */,
+				5D0BCFA719577B6D0065FFA4 /* Main.storyboard */,
+				5D0BCF7C19577AB30065FFA4 /* Supporting Files */,
 			);
 			path = "Conversion Master";
 			sourceTree = "<group>";
@@ -368,10 +371,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0BCF8619577AB30065FFA4 /* FTAppDelegate.m in Sources */,
-				5D0BCFC01957DA620065FFA4 /* FTConverterFactory.m in Sources */,
 				5D0BCF8219577AB30065FFA4 /* main.m in Sources */,
+				5DE61274195B86D40060B807 /* FTConverter.m in Sources */,
 				5D0BCFA619577B380065FFA4 /* FTUnitSelectViewController.m in Sources */,
 				5D0BCFBD1957D39A0065FFA4 /* FTGainConverter.m in Sources */,
+				5DE61272195B45FE0060B807 /* FTConversionCell.m in Sources */,
 				5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */,
 				5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */,
 			);
@@ -490,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Conversion Master/Conversion Master-Prefix.pch";
 				INFOPLIST_FILE = "Conversion Master/Conversion Master-Info.plist";
@@ -503,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Conversion Master/Conversion Master-Prefix.pch";
 				INFOPLIST_FILE = "Conversion Master/Conversion Master-Info.plist";

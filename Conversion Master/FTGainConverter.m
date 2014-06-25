@@ -10,7 +10,6 @@
 
 
 @implementation FTGainConverter
-@ synthesize dataMap;
 
 -(NSNumber *) convertValue:(double)value from:(NSString *)first to:(NSString *)second
 {

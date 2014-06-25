@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "FTConverter.h"
 
-@interface FTGainConverter : NSObject
-<FTConverter>
+@interface FTGainConverter : FTConverter
 
 @end

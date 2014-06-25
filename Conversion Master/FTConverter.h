@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol FTConverter <NSObject>
+@interface FTConverter: NSObject
 
-@property (weak) NSMutableDictionary *dataMap;
+@property NSMutableDictionary *dataMap;
 
++(FTConverter *) createWithMap:(NSMutableDictionary *) dataMap;
 -(NSNumber *) convertValue:(double)value from:(NSString *)first to:(NSString *)second;
 
 @end

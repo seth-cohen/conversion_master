@@ -7,12 +7,13 @@
 //
 
 #import "FTConversionViewController.h"
-#import "FTConverterFactory.h"
+#import "FTConverter.h"
+#import "FTConversionCell.h"
 
 @interface FTConversionViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property id<FTConverter> converter;
+@property FTConverter *converter;
 
 @end
 
@@ -29,7 +30,10 @@
     if (resourceData) {
         NSDictionary* resources = [NSPropertyListSerialization propertyListWithData:resourceData options:0 format:NULL error:&error];
         if (resources) {
-            self.dataMap = resources[@"map"];
+            NSDictionary *dataMap = resources[@"map"];
+            self.units = [[dataMap allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+            self.converter = [FTConverter createWithMap:[dataMap mutableCopy]] ;
+            
             self.basis = resources[@"basis"];
         } else {
             NSLog(@"Error: Could not read plist data from %@: %@", resourceFile, error);
@@ -56,11 +60,6 @@
     self.title = self.currentUnitType;
     
     [self loadTypeDataFromResource:[self.currentUnitType stringByAppendingString:@"_data"]];
-    
-    if (self.dataMap != nil){
-        self.converter = [FTConverterFactory createWithMap:self.dataMap];
-    }
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,18 +77,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.dataMap count];
+    return [self.units count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
+    FTConversionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConversionCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    //cell.textLabel.text = [self.dataMap allKeys][indexPath.row];
-    NSString *current = [self.dataMap allKeys][indexPath.row];
-    cell.textLabel.text = [[[self.converter convertValue:2.0 from:self.basis to:current] stringValue] stringByAppendingString:current];
+    // Configure the cell...    
+    //NSString *current = [self.dataMap allKeys][indexPath.row];
+    NSString *current = self.units[indexPath.row];
+    
+    cell.valueLabel.text = [[self.converter convertValue:2.0 from:self.basis to:current] stringValue];
+    cell.unitLabel.text = [@":" stringByAppendingString: current];
+    
     return cell;
 }
   
