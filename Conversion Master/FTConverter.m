@@ -11,7 +11,7 @@
 
 @implementation FTConverter
 
-+(FTConverter *) createWithMap:(NSMutableDictionary *) dataMap
++(FTConverter *) converterWithMap:(NSMutableDictionary *) dataMap
 {
     FTConverter *converter;
     

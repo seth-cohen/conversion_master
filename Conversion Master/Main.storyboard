@@ -96,7 +96,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-4n-uun">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-4n-uun">
                                 <rect key="frame" x="20" y="68" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -163,7 +163,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="xIf-Nb-r2K"/>
                     <connections>
-                        <outlet property="textField" destination="Sr7-4n-uun" id="ijy-sI-X3J"/>
+                        <outlet property="tableView" destination="ife-ju-ax3" id="LRV-i7-dYP"/>
+                        <outlet property="textField" destination="Sr7-4n-uun" id="DR2-2O-NoB"/>
                         <outlet property="view" destination="hFq-JH-ANp" id="pjJ-lD-ulR"/>
                     </connections>
                 </viewController>

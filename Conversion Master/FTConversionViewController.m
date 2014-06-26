@@ -9,20 +9,66 @@
 #import "FTConversionViewController.h"
 #import "FTConverter.h"
 #import "FTConversionCell.h"
+#import "FTScientificInputViewController.h"
 
 @interface FTConversionViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property FTConverter *converter;
+@property NSArray *units;
+@property NSMutableArray *values;
+
+@property FTScientificInputViewController *keyboard;
 
 @end
 
 @implementation FTConversionViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // get the preferences and load significant digits
+        _sigFigs = 4;
+        
+        // set the custom keyboard input view
+        // needs to be member variable due to ARC, view gets retained but delegate disappers
+        _keyboard = [[FTScientificInputViewController alloc] initWithNibName: nil bundle:nil];
+        _textField.delegate = self.keyboard;
+    }
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    // set the default selected row to get highlighting
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView selectRowAtIndexPath:indexPath animated:NO  scrollPosition:UITableViewScrollPositionNone];
+    
+    self.textField.inputView = self.keyboard.view;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.textField.text = [@1.0 stringValue];
+    self.title = self.currentUnitType;
+    
+    [self loadTypeDataFromResource:[self.currentUnitType stringByAppendingString:@"_data"]];
+    //[self.textField becomeFirstResponder];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Data Conversion
+
 - (void) loadTypeDataFromResource:(NSString *) fileName
 {
-    //self.dataMap = [[NSMutableDictionary alloc] init];
-    
     NSError *error = nil;
     NSURL *resourceFile = [[NSBundle mainBundle] URLForResource:[fileName lowercaseString] withExtension:@"plist"];
     
@@ -32,9 +78,12 @@
         if (resources) {
             NSDictionary *dataMap = resources[@"map"];
             self.units = [[dataMap allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-            self.converter = [FTConverter createWithMap:[dataMap mutableCopy]] ;
+            self.converter = [FTConverter converterWithMap:[dataMap mutableCopy]] ;
+            self.values = [[NSMutableArray alloc] initWithCapacity:[self.units count]];
             
             self.basis = resources[@"basis"];
+            
+            [self convertAllFromValue:1.0];
         } else {
             NSLog(@"Error: Could not read plist data from %@: %@", resourceFile, error);
         }
@@ -43,32 +92,35 @@
     }
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void) convertAllFromValue:(double) value
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-        NSLog(@"load converter");
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.textField.text = self.currentUnitType;
-    self.title = self.currentUnitType;
+    int i = 0;
+    NSNumber *tempValue;
     
-    [self loadTypeDataFromResource:[self.currentUnitType stringByAppendingString:@"_data"]];
+    for (NSString *unitFrom in self.units) {
+        tempValue = [self.converter convertValue:value from:unitFrom to:self.basis];
+        double doubleWithSigFigs = [self round:[tempValue doubleValue] toSignificantFigures:self.sigFigs];
+        
+        [self.values setObject:[NSNumber numberWithDouble:doubleWithSigFigs] atIndexedSubscript:i];
+        ++i;
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(double) round:(double)num toSignificantFigures:(int)n {
+    if(num == 0) {
+        return 0;
+    }
+    
+    double d = ceil(log10(num < 0 ? -num: num));
+    int power = n - (int) d;
+    
+    double magnitude = pow(10, power);
+    long shifted = round(num*magnitude);
+    return shifted/magnitude;
 }
 
 #pragma mark - Table view data source
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -80,21 +132,17 @@
     return [self.units count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FTConversionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConversionCell" forIndexPath:indexPath];
     
-    // Configure the cell...    
-    //NSString *current = [self.dataMap allKeys][indexPath.row];
-    NSString *current = self.units[indexPath.row];
-    
-    cell.valueLabel.text = [[self.converter convertValue:2.0 from:self.basis to:current] stringValue];
-    cell.unitLabel.text = [@":" stringByAppendingString: current];
+    // Configure the cell...
+    cell.valueLabel.text = [self.values[indexPath.row] stringValue];
+    cell.unitLabel.text = [@":" stringByAppendingString: self.units[indexPath.row]];
     
     return cell;
 }
-  
+
 
 /*
 #pragma mark - Navigation

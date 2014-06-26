@@ -15,30 +15,6 @@
 
 @implementation FTUnitSelectViewController
 
-- (void) loadInitialData
-{
-    self.unitTypes = [[NSMutableArray alloc] init];
-    
-    NSError *error = nil;
-    NSURL *resourceFile = [[NSBundle mainBundle] URLForResource:@"unit_types" withExtension:@"plist"];
-    
-    NSData *resourceData = [NSData dataWithContentsOfURL:resourceFile options:0 error:&error];
-    if (resourceData) {
-        NSDictionary* resources = [NSPropertyListSerialization propertyListWithData:resourceData options:0 format:NULL error:&error];
-        if (resources) {
-            NSArray* myArray = resources[@"unitTypeArray"];
-            for (NSString *name in myArray) {
-                [self.unitTypes addObject:name];
-            }
-        } else {
-            NSLog(@"Error: Could not read plist data from %@: %@", resourceFile, error);
-        }
-    } else {
-        NSLog(@"Error: Could not read file data at %@: %@", resourceFile, error);
-    }
-
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -69,9 +45,36 @@
         NSString *selectedItem = self.unitTypes[indexPath.row];
         
         NSLog(@"Selected Item Name: %@", selectedItem);
-        destination.currentUnitType = [selectedItem copy];
+        destination.currentUnitType = selectedItem;
     }
 }
+
+#pragma mark - 
+
+- (void) loadInitialData
+{
+    self.unitTypes = [[NSMutableArray alloc] init];
+    
+    NSError *error = nil;
+    NSURL *resourceFile = [[NSBundle mainBundle] URLForResource:@"unit_types" withExtension:@"plist"];
+    
+    NSData *resourceData = [NSData dataWithContentsOfURL:resourceFile options:0 error:&error];
+    if (resourceData) {
+        NSDictionary* resources = [NSPropertyListSerialization propertyListWithData:resourceData options:0 format:NULL error:&error];
+        if (resources) {
+            NSArray* myArray = resources[@"unitTypeArray"];
+            for (NSString *name in myArray) {
+                [self.unitTypes addObject:name];
+            }
+        } else {
+            NSLog(@"Error: Could not read plist data from %@: %@", resourceFile, error);
+        }
+    } else {
+        NSLog(@"Error: Could not read file data at %@: %@", resourceFile, error);
+    }
+
+}
+
 
 #pragma mark Collection View Data Source
 
@@ -94,15 +97,5 @@
     cell.label.text = [self.unitTypes objectAtIndex:indexPath.row];
     return cell;
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

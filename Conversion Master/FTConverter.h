@@ -12,7 +12,7 @@
 
 @property NSMutableDictionary *dataMap;
 
-+(FTConverter *) createWithMap:(NSMutableDictionary *) dataMap;
++(FTConverter *) converterWithMap:(NSMutableDictionary *) dataMap;
 -(NSNumber *) convertValue:(double)value from:(NSString *)first to:(NSString *)second;
 
 @end

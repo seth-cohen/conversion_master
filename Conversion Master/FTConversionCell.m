@@ -10,6 +10,17 @@
 
 @implementation FTConversionCell
 
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        //initialization code
+        NSLog(@"Called initWithFram on Conversion Cell");
+    }
+    
+    return self;
+}
+
 - (void)awakeFromNib
 {
     

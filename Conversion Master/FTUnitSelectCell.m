@@ -15,10 +15,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         //initialization code
+        NSLog(@"Called initWithFram on UnitCell");
     }
     
     return self;
 }
+
 - (void)awakeFromNib
 {
     self.layer.borderWidth = 2.0f;

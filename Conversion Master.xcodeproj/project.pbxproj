@@ -48,6 +48,8 @@
 		5DE6126F19590AED0060B807 /* volume-dry_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6125919590AEC0060B807 /* volume-dry_data.plist */; };
 		5DE61272195B45FE0060B807 /* FTConversionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE61271195B45FE0060B807 /* FTConversionCell.m */; };
 		5DE61274195B86D40060B807 /* FTConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE61273195B86D40060B807 /* FTConverter.m */; };
+		5DE61278195BB3B20060B807 /* FTScientificInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */; };
+		5DE61279195BB3B20060B807 /* FTScientificInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,9 @@
 		5DE61270195B45FE0060B807 /* FTConversionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversionCell.h; sourceTree = "<group>"; };
 		5DE61271195B45FE0060B807 /* FTConversionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversionCell.m; sourceTree = "<group>"; };
 		5DE61273195B86D40060B807 /* FTConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConverter.m; sourceTree = "<group>"; };
+		5DE61275195BB3B20060B807 /* FTScientificInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTScientificInputViewController.h; sourceTree = "<group>"; };
+		5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTScientificInputViewController.m; sourceTree = "<group>"; };
+		5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTScientificInputViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +183,9 @@
 				5DE61271195B45FE0060B807 /* FTConversionCell.m */,
 				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
 				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
+				5DE61275195BB3B20060B807 /* FTScientificInputViewController.h */,
+				5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */,
+				5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */,
 				5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */,
 				5DE61273195B86D40060B807 /* FTConverter.m */,
 				5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */,
@@ -351,6 +359,7 @@
 				5DE6126C19590AED0060B807 /* torque_data.plist in Resources */,
 				5DE6126719590AEC0060B807 /* pressure_data.plist in Resources */,
 				5DE6125F19590AEC0060B807 /* energy_data.plist in Resources */,
+				5DE61279195BB3B20060B807 /* FTScientificInputViewController.xib in Resources */,
 				5DE6126919590AED0060B807 /* temperature_data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +387,7 @@
 				5DE61272195B45FE0060B807 /* FTConversionCell.m in Sources */,
 				5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */,
 				5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */,
+				5DE61278195BB3B20060B807 /* FTScientificInputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

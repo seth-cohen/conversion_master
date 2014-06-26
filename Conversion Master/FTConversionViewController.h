@@ -11,8 +11,8 @@
 @interface FTConversionViewController : UIViewController
 <UITableViewDataSource, UITableViewDelegate>
 
-@property NSArray *units;
 @property NSString *currentUnitType;
 @property NSString *basis;
+@property int sigFigs;
 
 @end
