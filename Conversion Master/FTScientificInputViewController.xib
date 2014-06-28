@@ -56,6 +56,9 @@
                             <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="selectAllTapped" destination="-1" eventType="touchUpInside" id="Wfj-sV-Lye"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="APJ-8a-AEc">
                     <rect key="frame" x="80" y="13" width="48" height="42"/>
@@ -338,6 +341,9 @@
                             <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="expTapped" destination="-1" eventType="touchUpInside" id="kZS-mT-jpD"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VIy-gK-osm" userLabel="Button - right">
                     <rect key="frame" x="248" y="63" width="68" height="42"/>
@@ -359,6 +365,9 @@
                             <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="directionTapped:" destination="-1" eventType="touchUpInside" id="3Us-Oo-ZEc"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9S3-wG-PlQ" userLabel="Button - left">
                     <rect key="frame" x="248" y="13" width="68" height="42"/>
@@ -380,6 +389,9 @@
                             <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="directionTapped:" destination="-1" eventType="touchUpInside" id="SCj-cZ-zKa"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q67-Ll-XQx" userLabel="Button - delete">
                     <rect key="frame" x="4" y="13" width="68" height="42"/>
@@ -401,6 +413,9 @@
                             <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="backTapped" destination="-1" eventType="touchUpInside" id="NSz-vi-fLm"/>
+                    </connections>
                 </button>
                 <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WVt-v1-u8B">
                     <rect key="frame" x="4" y="63" width="68" height="141"/>
@@ -449,6 +464,9 @@
                             <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="minusTapped" destination="-1" eventType="touchUpInside" id="79d-ja-2yj"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3xt-i0-bTm">
                     <rect key="frame" x="80" y="162" width="48" height="42"/>

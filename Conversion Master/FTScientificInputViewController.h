@@ -30,9 +30,12 @@
 
 @property (strong, nonatomic) IBOutlet UIView *viewContainer;
 
-
 - (IBAction)buttonTapped:(id)sender;
 - (IBAction)doneTapped;
-
+- (IBAction)selectAllTapped;
+- (IBAction)backTapped;
+- (IBAction)directionTapped:(id)sender;
+- (IBAction)expTapped;
+- (IBAction)minusTapped;
 
 @end
