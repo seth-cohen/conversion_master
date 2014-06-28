@@ -20,8 +20,7 @@
 @property NSArray *units;
 @property NSMutableArray *values;
 
-@property FTScientificInputViewController *keyboard;
-
+@property FTScientificInputViewController *keyboardController;
 @end
 
 @implementation FTConversionViewController
@@ -34,8 +33,8 @@
         
         // set the custom keyboard input view
         // needs to be member variable due to ARC, view gets retained but delegate disappers
-        _keyboard = [[FTScientificInputViewController alloc] initWithNibName: nil bundle:nil];
-        _textField.delegate = self.keyboard;
+        _keyboardController = [[FTScientificInputViewController alloc] initWithNibName: nil bundle:nil];
+        _textField.delegate = self.keyboardController;
     }
     return self;
 }
@@ -46,7 +45,7 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView selectRowAtIndexPath:indexPath animated:NO  scrollPosition:UITableViewScrollPositionNone];
     
-    self.textField.inputView = self.keyboard.view;
+    self.textField.inputView = self.keyboardController.view;
 }
 
 - (void)viewDidLoad

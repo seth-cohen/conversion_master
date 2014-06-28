@@ -50,6 +50,12 @@
 		5DE61274195B86D40060B807 /* FTConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE61273195B86D40060B807 /* FTConverter.m */; };
 		5DE61278195BB3B20060B807 /* FTScientificInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */; };
 		5DE61279195BB3B20060B807 /* FTScientificInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */; };
+		5DE6127D195CEE980060B807 /* buttonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6127C195CEE980060B807 /* buttonBackground.png */; };
+		5DE6127F195CF35F0060B807 /* keyboardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6127E195CF35F0060B807 /* keyboardBackground.png */; };
+		5DE61285195CFC950060B807 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE61284195CFC950060B807 /* backButton.png */; };
+		5DE6128D195D03170060B807 /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6128B195D03170060B807 /* leftButton.png */; };
+		5DE6128E195D03170060B807 /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6128C195D03170060B807 /* rightButton.png */; };
+		5DE6129B195E40F80060B807 /* UITextField+CustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6129A195E40F80060B807 /* UITextField+CustomKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +123,13 @@
 		5DE61275195BB3B20060B807 /* FTScientificInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTScientificInputViewController.h; sourceTree = "<group>"; };
 		5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTScientificInputViewController.m; sourceTree = "<group>"; };
 		5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTScientificInputViewController.xib; sourceTree = "<group>"; };
+		5DE6127C195CEE980060B807 /* buttonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBackground.png; sourceTree = "<group>"; };
+		5DE6127E195CF35F0060B807 /* keyboardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardBackground.png; sourceTree = "<group>"; };
+		5DE61284195CFC950060B807 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		5DE6128B195D03170060B807 /* leftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftButton.png; sourceTree = "<group>"; };
+		5DE6128C195D03170060B807 /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightButton.png; sourceTree = "<group>"; };
+		5DE61299195E40F80060B807 /* UITextField+CustomKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CustomKeyboard.h"; sourceTree = "<group>"; };
+		5DE6129A195E40F80060B807 /* UITextField+CustomKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CustomKeyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,13 +196,13 @@
 				5DE61271195B45FE0060B807 /* FTConversionCell.m */,
 				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
 				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
-				5DE61275195BB3B20060B807 /* FTScientificInputViewController.h */,
-				5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */,
-				5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */,
 				5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */,
 				5DE61273195B86D40060B807 /* FTConverter.m */,
 				5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */,
 				5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */,
+				5DE61275195BB3B20060B807 /* FTScientificInputViewController.h */,
+				5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */,
+				5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */,
 				5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */,
 				5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */,
 				5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */,
@@ -197,6 +210,8 @@
 				5D0BCF8719577AB30065FFA4 /* Images.xcassets */,
 				5D0BCFA719577B6D0065FFA4 /* Main.storyboard */,
 				5D0BCF7C19577AB30065FFA4 /* Supporting Files */,
+				5DE61299195E40F80060B807 /* UITextField+CustomKeyboard.h */,
+				5DE6129A195E40F80060B807 /* UITextField+CustomKeyboard.m */,
 			);
 			path = "Conversion Master";
 			sourceTree = "<group>";
@@ -233,6 +248,7 @@
 		5D0BCFA919577BC00065FFA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5DE61286195CFD530060B807 /* images */,
 				5DE6124419590AEC0060B807 /* acceleration_data.plist */,
 				5DE6124519590AEC0060B807 /* angle_data.plist */,
 				5DE6124619590AEC0060B807 /* area_data.plist */,
@@ -257,6 +273,19 @@
 				5DE6125919590AEC0060B807 /* volume-dry_data.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DE61286195CFD530060B807 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5DE6128B195D03170060B807 /* leftButton.png */,
+				5DE6128C195D03170060B807 /* rightButton.png */,
+				5DE61284195CFC950060B807 /* backButton.png */,
+				5DE6127E195CF35F0060B807 /* keyboardBackground.png */,
+				5DE6127C195CEE980060B807 /* buttonBackground.png */,
+			);
+			name = images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE61285195CFC950060B807 /* backButton.png in Resources */,
 				5DE6126619590AEC0060B807 /* power_data.plist in Resources */,
 				5DE6126519590AEC0060B807 /* memory_data.plist in Resources */,
 				5DE6125A19590AEC0060B807 /* acceleration_data.plist in Resources */,
@@ -352,14 +382,18 @@
 				5DE6126819590AED0060B807 /* speed_data.plist in Resources */,
 				5DE6126D19590AED0060B807 /* unit_types.plist in Resources */,
 				5DE6125B19590AEC0060B807 /* angle_data.plist in Resources */,
+				5DE6128D195D03170060B807 /* leftButton.png in Resources */,
 				5DE6126A19590AED0060B807 /* thermal conductivity_data.plist in Resources */,
 				5DE6125D19590AEC0060B807 /* concentration_data.plist in Resources */,
+				5DE6128E195D03170060B807 /* rightButton.png in Resources */,
 				5DE6126119590AEC0060B807 /* force_data.plist in Resources */,
 				5DE6126B19590AED0060B807 /* time_data.plist in Resources */,
 				5DE6126C19590AED0060B807 /* torque_data.plist in Resources */,
+				5DE6127F195CF35F0060B807 /* keyboardBackground.png in Resources */,
 				5DE6126719590AEC0060B807 /* pressure_data.plist in Resources */,
 				5DE6125F19590AEC0060B807 /* energy_data.plist in Resources */,
 				5DE61279195BB3B20060B807 /* FTScientificInputViewController.xib in Resources */,
+				5DE6127D195CEE980060B807 /* buttonBackground.png in Resources */,
 				5DE6126919590AED0060B807 /* temperature_data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +420,7 @@
 				5D0BCFBD1957D39A0065FFA4 /* FTGainConverter.m in Sources */,
 				5DE61272195B45FE0060B807 /* FTConversionCell.m in Sources */,
 				5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */,
+				5DE6129B195E40F80060B807 /* UITextField+CustomKeyboard.m in Sources */,
 				5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */,
 				5DE61278195BB3B20060B807 /* FTScientificInputViewController.m in Sources */,
 			);

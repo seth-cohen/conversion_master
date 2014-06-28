@@ -41,11 +41,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="96" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="96" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-Ts-O1D">
-                                            <rect key="frame" x="0.0" y="25" width="96" height="30"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="96" placeholderIntrinsicHeight="30" text="Label" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" minimumScaleFactor="0.55000000000000004" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-Ts-O1D">
+                                            <rect key="frame" x="4" y="25" width="86" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
