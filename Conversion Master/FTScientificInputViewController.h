@@ -37,5 +37,6 @@
 - (IBAction)directionTapped:(id)sender;
 - (IBAction)expTapped;
 - (IBAction)minusTapped;
+- (IBAction)dotTapped;
 
 @end

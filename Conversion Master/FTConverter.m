@@ -8,14 +8,20 @@
 
 #import "FTConverter.h"
 #import "FTGainConverter.h"
+#import "FTGainOffsetConverter.h"
 
 @implementation FTConverter
 
-+(FTConverter *) converterWithMap:(NSMutableDictionary *) dataMap
++(instancetype) converterWithMap:(NSMutableDictionary *) dataMap type:(ConverterType)type
 {
     FTConverter *converter;
     
-    converter = [[FTGainConverter alloc] init];
+    if (type == GAIN) {
+        converter = [[FTGainConverter alloc] init];
+    }
+    else if (type == GAIN_OFFSET) {
+        converter = [[FTGainOffsetConverter alloc] init];
+    }
     converter.dataMap = dataMap;
     
     return converter;

@@ -174,9 +174,37 @@
     NSString *text = [input textInRange:fullRange];
     NSInteger position = [input offsetFromPosition:[input beginningOfDocument] toPosition:startPos];
     
+    //split the string into a pre and post 'e'
+    NSArray *splitStrings = [text componentsSeparatedByString:@"e"];
+    bool firstContainsMinus = [splitStrings[0] rangeOfString:@"-"].location != NSNotFound;
+    bool secondContainsMinus = [splitStrings count] > 1 && [splitStrings[1] rangeOfString:@"-"].location != NSNotFound;
+    
     // a '-' can only appear at beginning or after an e and there can only one before or after the 'e'
-    if ( position == 0 || ([text rangeOfString:@"e"].location == position - 1)) {
+    if ( (position == 0 && !firstContainsMinus ) || (([text rangeOfString:@"e"].location == position - 1) && !secondContainsMinus)){
         [input insertText:@"-"];
+    }
+}
+
+- (IBAction)dotTapped {
+    id<UITextInput> input = self.textInput;
+    
+    // get the current cursor
+    UITextRange *selRange = input.selectedTextRange;
+    UITextPosition *startPos = selRange.start;
+    
+    //get all text and position of the cursor
+    UITextRange *fullRange = [input textRangeFromPosition:[input beginningOfDocument] toPosition:[input endOfDocument]];
+    NSString *text = [input textInRange:fullRange];
+    NSInteger position = [input offsetFromPosition:[input beginningOfDocument] toPosition:startPos];
+    
+    //split the string into a pre and post 'e'
+    NSArray *splitStrings = [text componentsSeparatedByString:@"e"];
+    bool firstContainsDot = [splitStrings[0] rangeOfString:@"."].location != NSNotFound;
+    
+    // a '.' can only appear before an "e" and only if there aren't already any '.'
+    // if 'e' is not found location returns NSNotFound which equals NSIntegerMax
+    if ( !firstContainsDot  && [text rangeOfString:@"e"].location >= position ){
+        [input insertText:@"."];
     }
 }
 

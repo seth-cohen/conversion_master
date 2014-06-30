@@ -44,7 +44,7 @@
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="96" placeholderIntrinsicHeight="30" text="Label" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" minimumScaleFactor="0.55000000000000004" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-Ts-O1D">
                                             <rect key="frame" x="4" y="25" width="86" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
@@ -80,6 +80,9 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Select Unit Type" id="rQO-Ux-dKy"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="collectionView" destination="8H4-ZH-GeZ" id="6nq-Vw-utk"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlS-tm-2V1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

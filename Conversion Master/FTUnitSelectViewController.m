@@ -27,6 +27,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Create a view of the standard size at the top of the screen.
+    // Available AdSize constants are explained in GADAdSize.h.
+    self.bannerAd = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    
+    // Specify the ad unit ID.
+    self.bannerAd.adUnitID = @"ca-app-pub-7789759883918325/1617344497";
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    self.bannerAd.rootViewController = self;
+    [self.view addSubview:self.bannerAd];
+    
+    // Initiate a generic request to load it with an ad.
+    GADRequest *request = [GADRequest request];
+    
+    // Make the request for a test ad. Put in an identifier for
+    // the simulator as well as any devices you want to receive test ads.
+    request.testDevices = @[GAD_SIMULATOR_ID];
+    self.bannerAd.delegate = self;
+    [self.bannerAd loadRequest:request];
+    
     [self loadInitialData];
 }
 
@@ -96,6 +117,42 @@
     
     cell.label.text = [self.unitTypes objectAtIndex:indexPath.row];
     return cell;
+}
+
+#pragma mark Google Ad Delegate
+
+- (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error
+{
+    NSLog(@"%@", error);
+}
+
+- (void)adViewDidReceiveAd:(GADBannerView *)bannerView {
+    //[UIView beginAnimations:@"BannerSlide" context:nil];
+    static bool frameSizeAdjusted = NO;
+    if (!frameSizeAdjusted){
+        frameSizeAdjusted = YES;
+        bannerView.frame = CGRectMake(self.view.frame.size.width,
+                                      self.view.frame.size.height - self.bannerAd.frame.size.height,
+                                      bannerView.frame.size.width,
+                                      bannerView.frame.size.height);
+        
+        CGRect collectionFrame = self.collectionView.frame;
+        collectionFrame.size.height = collectionFrame.size.height - self.bannerAd.frame.size.height;
+        
+        [UIView animateWithDuration:0.5
+                              delay:0.1
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             self.collectionView.frame = collectionFrame;
+                             [self.bannerAd setTransform:CGAffineTransformMakeTranslation(-self.view.frame.size.width, 0)];
+                         }
+                         completion:^(BOOL finished) {
+                             // do something
+                         }
+         ];
+    }
+    
+    //[UIView commitAnimations];
 }
 
 @end

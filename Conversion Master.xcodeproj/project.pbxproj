@@ -56,6 +56,17 @@
 		5DE6128D195D03170060B807 /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6128B195D03170060B807 /* leftButton.png */; };
 		5DE6128E195D03170060B807 /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6128C195D03170060B807 /* rightButton.png */; };
 		5DE6129B195E40F80060B807 /* UITextField+CustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6129A195E40F80060B807 /* UITextField+CustomKeyboard.m */; };
+		5DE612A0195F1C1C0060B807 /* keyboardBackgroundDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6129F195F1C1C0060B807 /* keyboardBackgroundDark.png */; };
+		5DE612B0195FA7FE0060B807 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612AE195FA7FE0060B807 /* libGoogleAdMobAds.a */; };
+		5DE612B1195FA7FE0060B807 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5DE612AF195FA7FE0060B807 /* README.txt */; };
+		5DE612B3195FA8AC0060B807 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612B2195FA8AC0060B807 /* AdSupport.framework */; };
+		5DE612B5195FA8B80060B807 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612B4195FA8B80060B807 /* AudioToolbox.framework */; };
+		5DE612B7195FA8C20060B807 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612B6195FA8C20060B807 /* AVFoundation.framework */; };
+		5DE612B9195FA8D10060B807 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612B8195FA8D00060B807 /* CoreTelephony.framework */; };
+		5DE612BB195FA8DB0060B807 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612BA195FA8DB0060B807 /* MessageUI.framework */; };
+		5DE612BD195FA8E50060B807 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612BC195FA8E50060B807 /* StoreKit.framework */; };
+		5DE612BF195FA8F50060B807 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE612BE195FA8F50060B807 /* SystemConfiguration.framework */; };
+		5DE612C21960D4FD0060B807 /* FTGainOffsetConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE612C11960D4FD0060B807 /* FTGainOffsetConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +141,30 @@
 		5DE6128C195D03170060B807 /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightButton.png; sourceTree = "<group>"; };
 		5DE61299195E40F80060B807 /* UITextField+CustomKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CustomKeyboard.h"; sourceTree = "<group>"; };
 		5DE6129A195E40F80060B807 /* UITextField+CustomKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CustomKeyboard.m"; sourceTree = "<group>"; };
+		5DE6129F195F1C1C0060B807 /* keyboardBackgroundDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardBackgroundDark.png; sourceTree = "<group>"; };
+		5DE612A2195FA7FE0060B807 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdMobExtras.h; path = ../../GAdSDK/GADAdMobExtras.h; sourceTree = "<group>"; };
+		5DE612A3195FA7FE0060B807 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdNetworkExtras.h; path = ../../GAdSDK/GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		5DE612A4195FA7FE0060B807 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdSize.h; path = ../../GAdSDK/GADAdSize.h; sourceTree = "<group>"; };
+		5DE612A5195FA7FE0060B807 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADBannerView.h; path = ../../GAdSDK/GADBannerView.h; sourceTree = "<group>"; };
+		5DE612A6195FA7FE0060B807 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADBannerViewDelegate.h; path = ../../GAdSDK/GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		5DE612A7195FA7FE0060B807 /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInAppPurchase.h; path = ../../GAdSDK/GADInAppPurchase.h; sourceTree = "<group>"; };
+		5DE612A8195FA7FE0060B807 /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInAppPurchaseDelegate.h; path = ../../GAdSDK/GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
+		5DE612A9195FA7FE0060B807 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInterstitial.h; path = ../../GAdSDK/GADInterstitial.h; sourceTree = "<group>"; };
+		5DE612AA195FA7FE0060B807 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInterstitialDelegate.h; path = ../../GAdSDK/GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		5DE612AB195FA7FE0060B807 /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADModules.h; path = ../../GAdSDK/GADModules.h; sourceTree = "<group>"; };
+		5DE612AC195FA7FE0060B807 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADRequest.h; path = ../../GAdSDK/GADRequest.h; sourceTree = "<group>"; };
+		5DE612AD195FA7FE0060B807 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADRequestError.h; path = ../../GAdSDK/GADRequestError.h; sourceTree = "<group>"; };
+		5DE612AE195FA7FE0060B807 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = ../../GAdSDK/libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		5DE612AF195FA7FE0060B807 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ../../GAdSDK/README.txt; sourceTree = "<group>"; };
+		5DE612B2195FA8AC0060B807 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5DE612B4195FA8B80060B807 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5DE612B6195FA8C20060B807 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5DE612B8195FA8D00060B807 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5DE612BA195FA8DB0060B807 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5DE612BC195FA8E50060B807 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5DE612BE195FA8F50060B807 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5DE612C01960D4FD0060B807 /* FTGainOffsetConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGainOffsetConverter.h; sourceTree = "<group>"; };
+		5DE612C11960D4FD0060B807 /* FTGainOffsetConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGainOffsetConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +172,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE612BF195FA8F50060B807 /* SystemConfiguration.framework in Frameworks */,
+				5DE612BD195FA8E50060B807 /* StoreKit.framework in Frameworks */,
+				5DE612BB195FA8DB0060B807 /* MessageUI.framework in Frameworks */,
+				5DE612B9195FA8D10060B807 /* CoreTelephony.framework in Frameworks */,
+				5DE612B7195FA8C20060B807 /* AVFoundation.framework in Frameworks */,
+				5DE612B5195FA8B80060B807 /* AudioToolbox.framework in Frameworks */,
+				5DE612B3195FA8AC0060B807 /* AdSupport.framework in Frameworks */,
 				5D0BCF7819577AB30065FFA4 /* CoreGraphics.framework in Frameworks */,
+				5DE612B0195FA7FE0060B807 /* libGoogleAdMobAds.a in Frameworks */,
 				5D0BCF7A19577AB30065FFA4 /* UIKit.framework in Frameworks */,
 				5D0BCF7619577AB30065FFA4 /* Foundation.framework in Frameworks */,
 			);
@@ -179,6 +222,13 @@
 		5D0BCF7419577AB30065FFA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DE612BE195FA8F50060B807 /* SystemConfiguration.framework */,
+				5DE612BC195FA8E50060B807 /* StoreKit.framework */,
+				5DE612BA195FA8DB0060B807 /* MessageUI.framework */,
+				5DE612B8195FA8D00060B807 /* CoreTelephony.framework */,
+				5DE612B6195FA8C20060B807 /* AVFoundation.framework */,
+				5DE612B4195FA8B80060B807 /* AudioToolbox.framework */,
+				5DE612B2195FA8AC0060B807 /* AdSupport.framework */,
 				5D0BCF7519577AB30065FFA4 /* Foundation.framework */,
 				5D0BCF7719577AB30065FFA4 /* CoreGraphics.framework */,
 				5D0BCF7919577AB30065FFA4 /* UIKit.framework */,
@@ -190,28 +240,15 @@
 		5D0BCF7B19577AB30065FFA4 /* Conversion Master */ = {
 			isa = PBXGroup;
 			children = (
+				5DE612A1195FA7AE0060B807 /* Google Ads */,
+				5DE6129C195E72430060B807 /* Controllers */,
+				5DE6129D195E72710060B807 /* Converters */,
+				5DE6129E195E72900060B807 /* Keyboard */,
 				5D0BCF8419577AB30065FFA4 /* FTAppDelegate.h */,
 				5D0BCF8519577AB30065FFA4 /* FTAppDelegate.m */,
-				5DE61270195B45FE0060B807 /* FTConversionCell.h */,
-				5DE61271195B45FE0060B807 /* FTConversionCell.m */,
-				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
-				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
-				5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */,
-				5DE61273195B86D40060B807 /* FTConverter.m */,
-				5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */,
-				5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */,
-				5DE61275195BB3B20060B807 /* FTScientificInputViewController.h */,
-				5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */,
-				5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */,
-				5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */,
-				5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */,
-				5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */,
-				5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */,
 				5D0BCF8719577AB30065FFA4 /* Images.xcassets */,
 				5D0BCFA719577B6D0065FFA4 /* Main.storyboard */,
 				5D0BCF7C19577AB30065FFA4 /* Supporting Files */,
-				5DE61299195E40F80060B807 /* UITextField+CustomKeyboard.h */,
-				5DE6129A195E40F80060B807 /* UITextField+CustomKeyboard.m */,
 			);
 			path = "Conversion Master";
 			sourceTree = "<group>";
@@ -278,6 +315,7 @@
 		5DE61286195CFD530060B807 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5DE6129F195F1C1C0060B807 /* keyboardBackgroundDark.png */,
 				5DE6128B195D03170060B807 /* leftButton.png */,
 				5DE6128C195D03170060B807 /* rightButton.png */,
 				5DE61284195CFC950060B807 /* backButton.png */,
@@ -286,6 +324,67 @@
 			);
 			name = images;
 			path = Images;
+			sourceTree = "<group>";
+		};
+		5DE6129C195E72430060B807 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE61270195B45FE0060B807 /* FTConversionCell.h */,
+				5DE61271195B45FE0060B807 /* FTConversionCell.m */,
+				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
+				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
+				5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */,
+				5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */,
+				5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */,
+				5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5DE6129D195E72710060B807 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */,
+				5DE61273195B86D40060B807 /* FTConverter.m */,
+				5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */,
+				5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */,
+				5DE612C01960D4FD0060B807 /* FTGainOffsetConverter.h */,
+				5DE612C11960D4FD0060B807 /* FTGainOffsetConverter.m */,
+			);
+			name = Converters;
+			sourceTree = "<group>";
+		};
+		5DE6129E195E72900060B807 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5DE61299195E40F80060B807 /* UITextField+CustomKeyboard.h */,
+				5DE6129A195E40F80060B807 /* UITextField+CustomKeyboard.m */,
+				5DE61275195BB3B20060B807 /* FTScientificInputViewController.h */,
+				5DE61276195BB3B20060B807 /* FTScientificInputViewController.m */,
+				5DE61277195BB3B20060B807 /* FTScientificInputViewController.xib */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		5DE612A1195FA7AE0060B807 /* Google Ads */ = {
+			isa = PBXGroup;
+			children = (
+				5DE612A2195FA7FE0060B807 /* GADAdMobExtras.h */,
+				5DE612A3195FA7FE0060B807 /* GADAdNetworkExtras.h */,
+				5DE612A4195FA7FE0060B807 /* GADAdSize.h */,
+				5DE612A5195FA7FE0060B807 /* GADBannerView.h */,
+				5DE612A6195FA7FE0060B807 /* GADBannerViewDelegate.h */,
+				5DE612A7195FA7FE0060B807 /* GADInAppPurchase.h */,
+				5DE612A8195FA7FE0060B807 /* GADInAppPurchaseDelegate.h */,
+				5DE612A9195FA7FE0060B807 /* GADInterstitial.h */,
+				5DE612AA195FA7FE0060B807 /* GADInterstitialDelegate.h */,
+				5DE612AB195FA7FE0060B807 /* GADModules.h */,
+				5DE612AC195FA7FE0060B807 /* GADRequest.h */,
+				5DE612AD195FA7FE0060B807 /* GADRequestError.h */,
+				5DE612AE195FA7FE0060B807 /* libGoogleAdMobAds.a */,
+				5DE612AF195FA7FE0060B807 /* README.txt */,
+			);
+			name = "Google Ads";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE612A0195F1C1C0060B807 /* keyboardBackgroundDark.png in Resources */,
 				5DE61285195CFC950060B807 /* backButton.png in Resources */,
 				5DE6126619590AEC0060B807 /* power_data.plist in Resources */,
 				5DE6126519590AEC0060B807 /* memory_data.plist in Resources */,
@@ -376,6 +476,7 @@
 				5D0BCF8019577AB30065FFA4 /* InfoPlist.strings in Resources */,
 				5DE6126019590AEC0060B807 /* flow_data.plist in Resources */,
 				5D0BCF8819577AB30065FFA4 /* Images.xcassets in Resources */,
+				5DE612B1195FA7FE0060B807 /* README.txt in Resources */,
 				5DE6126419590AEC0060B807 /* mass_data.plist in Resources */,
 				5DE6125E19590AEC0060B807 /* density_data.plist in Resources */,
 				5DE6126F19590AED0060B807 /* volume-dry_data.plist in Resources */,
@@ -422,6 +523,7 @@
 				5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */,
 				5DE6129B195E40F80060B807 /* UITextField+CustomKeyboard.m in Sources */,
 				5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */,
+				5DE612C21960D4FD0060B807 /* FTGainOffsetConverter.m in Sources */,
 				5DE61278195BB3B20060B807 /* FTScientificInputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +645,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Conversion Master/Conversion Master-Prefix.pch";
 				INFOPLIST_FILE = "Conversion Master/Conversion Master-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/seth/Documents/iOS apps/GAdSDK\"",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -557,7 +666,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Conversion Master/Conversion Master-Prefix.pch";
 				INFOPLIST_FILE = "Conversion Master/Conversion Master-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/seth/Documents/iOS apps/GAdSDK\"",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

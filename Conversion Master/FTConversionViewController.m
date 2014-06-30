@@ -30,6 +30,8 @@
     if (self) {
         // get the preferences and load significant digits
         _sigFigs = 4;
+        // set notification to know when the textField value changes
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextFieldTextDidChangeNotification object:_textField];
         
         // set the custom keyboard input view
         // needs to be member variable due to ARC, view gets retained but delegate disappers
@@ -74,13 +76,14 @@
     NSData *resourceData = [NSData dataWithContentsOfURL:resourceFile options:0 error:&error];
     if (resourceData) {
         NSDictionary* resources = [NSPropertyListSerialization propertyListWithData:resourceData options:0 format:NULL error:&error];
+        ConverterType converterType = [self.currentUnitType isEqualToString:@"Temperature"] ? GAIN_OFFSET : GAIN;
         if (resources) {
             NSDictionary *dataMap = resources[@"map"];
             self.units = [[dataMap allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-            self.converter = [FTConverter converterWithMap:[dataMap mutableCopy]] ;
+            self.converter = [FTConverter converterWithMap:[dataMap mutableCopy] type:converterType] ;
             self.values = [[NSMutableArray alloc] initWithCapacity:[self.units count]];
             
-            self.basis = resources[@"basis"];
+            self.basis = self.units[0];//resources[@"basis"];
             
             [self convertAllFromValue:1.0];
         } else {
@@ -109,17 +112,43 @@
     if(num == 0) {
         return 0;
     }
-    
+
     double d = ceil(log10(num < 0 ? -num: num));
     int power = n - (int) d;
     
     double magnitude = pow(10, power);
     long shifted = round(num*magnitude);
     return shifted/magnitude;
+
+    /*
+    NSNumberFormatter *doubleValF = [[NSNumberFormatter alloc] init];
+    [doubleValF setNumberStyle:NSNumberFormatterDecimalStyle];
+    [doubleValF setRoundingMode:NSNumberFormatterRoundHalfUp];
+    
+    doubleValF.usesGroupingSeparator = NO;
+    doubleValF.minimumSignificantDigits = n;
+    doubleValF.maximumSignificantDigits = n;
+    doubleValF.usesSignificantDigits = YES;
+    
+    NSNumber *numberDouble = [NSNumber numberWithDouble:num];
+    NSString *stringDouble = [doubleValF stringFromNumber:numberDouble];
+    double retVal = [stringDouble doubleValue];
+    return retVal;
+    */
+}
+
+-(void) textChanged:(NSNotification *) notification
+{
+    if (notification.object == self.textField) {
+        double value = [self.textField.text doubleValue];
+        [self convertAllFromValue:value];
+    }
+    [self.tableView reloadData];
+    
+    [self highlightRowAtIndex:[self.units indexOfObject:self.basis]];
 }
 
 #pragma mark - Table view data source
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -142,7 +171,25 @@
     return cell;
 }
 
+#pragma mark - Table View delegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.basis = self.units[indexPath.row];
+    
+    double value = [self.textField.text doubleValue];
+    [self convertAllFromValue:value];
+    [tableView reloadData];
+    
+    [self highlightRowAtIndex:indexPath.row];
+}
+
+- (void) highlightRowAtIndex:(int) index
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    [cell setHighlighted:YES];
+}
 /*
 #pragma mark - Navigation
 
