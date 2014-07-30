@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GADBannerView.h"
+#import "GADBannerViewDelegate.h"
 
 @interface FTConversionViewController : UIViewController
-<UITableViewDataSource, UITableViewDelegate>
+<UITableViewDataSource, UITableViewDelegate, GADBannerViewDelegate>
 
 @property NSString *currentUnitType;
 @property NSString *basis;
 @property int sigFigs;
+
+@property GADBannerView *bannerAd;
 
 @end

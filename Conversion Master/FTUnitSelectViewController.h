@@ -14,7 +14,6 @@
 @interface FTUnitSelectViewController : UICollectionViewController
 <UICollectionViewDataSource, UICollectionViewDelegate, GADBannerViewDelegate>
 
-@property NSMutableArray *unitTypes;
 @property GADBannerView *bannerAd;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 

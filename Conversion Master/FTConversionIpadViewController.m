@@ -1,29 +1,29 @@
 //
-//  FTConversionViewController.m
+//  FTConversionIpadViewController.m
 //  Conversion Master
 //
-//  Created by Seth Cohen on 6/22/14.
+//  Created by Seth Cohen on 7/3/14.
 //  Copyright (c) 2014 Seth Cohen. All rights reserved.
 //
 
-#import "FTConversionViewController.h"
+#import "FTConversionIpadViewController.h"
 #import "FTConverter.h"
 #import "FTConversionCell.h"
 #import "FTScientificInputViewController.h"
 
-@interface FTConversionViewController ()
+@interface FTConversionIpadViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @property FTConverter *converter;
 @property NSArray *units;
 @property NSMutableArray *values;
-
 @property FTScientificInputViewController *keyboardController;
+
 @end
 
-@implementation FTConversionViewController
+@implementation FTConversionIpadViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -38,7 +38,13 @@
         _keyboardController = [[FTScientificInputViewController alloc] initWithNibName: nil bundle:nil];
         _textField.delegate = self.keyboardController;
     }
+
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -50,45 +56,26 @@
     self.textField.inputView = self.keyboardController.view;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Create a view of the standard size at the bottom of the screen.
-    // Available AdSize constants are explained in GADAdSize.h.
-    self.bannerAd = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-    
-    // Specify the ad unit ID.
-    self.bannerAd.adUnitID = @"ca-app-pub-7789759883918325/1617344497";
-    
-    // Let the runtime know which UIViewController to restore after taking
-    // the user wherever the ad goes and add it to the view hierarchy.
-    self.bannerAd.rootViewController = self;
-    [self.view addSubview:self.bannerAd];
-    
-    // Initiate a generic request to load it with an ad.
-    GADRequest *request = [GADRequest request];
-    
-    // Make the request for a test ad. Put in an identifier for
-    // the simulator as well as any devices you want to receive test ads.
-    request.testDevices = @[GAD_SIMULATOR_ID];
-    self.bannerAd.delegate = self;
-    [self.bannerAd loadRequest:request];
-    
-    self.textField.text = [@1.0 stringValue];
-    self.title = self.currentUnitType;
-    
-    [self loadTypeDataFromResource:[self.currentUnitType stringByAppendingString:@"_data"]];
-    //[self.textField becomeFirstResponder];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Data Conversion
+#pragma mark - Unit Select Delegate
+- (void) unitWasSelected:(NSString *)unitName {
+    // set the title and the unit type
+    self.currentUnitType = unitName;
+    self.title = [NSString stringWithFormat:@"Converting - %@",self.currentUnitType];
+    
+    // refresh the data
+    [self loadTypeDataFromResource:[self.currentUnitType stringByAppendingString:@"_data"]];
+    [self.tableView reloadData];
+    
+    [self highlightRowAtIndex:[self.units indexOfObject:self.basis]];
+}
 
+#pragma mark - Data Conversion
 - (void) loadTypeDataFromResource:(NSString *) fileName
 {
     NSError *error = nil;
@@ -106,7 +93,7 @@
             
             self.basis = self.units[0];//resources[@"basis"];
             
-            [self convertAllFromValue:1.0];
+            [self convertAllFromValue:[self.textField.text doubleValue]];
         } else {
             NSLog(@"Error: Could not read plist data from %@: %@", resourceFile, error);
         }
@@ -133,29 +120,29 @@
     if(num == 0) {
         return 0;
     }
-
+    
     double d = ceil(log10(num < 0 ? -num: num));
     int power = n - (int) d;
     
     double magnitude = pow(10, power);
     long shifted = round(num*magnitude);
     return shifted/magnitude;
-
+    
     /*
-    NSNumberFormatter *doubleValF = [[NSNumberFormatter alloc] init];
-    [doubleValF setNumberStyle:NSNumberFormatterDecimalStyle];
-    [doubleValF setRoundingMode:NSNumberFormatterRoundHalfUp];
-    
-    doubleValF.usesGroupingSeparator = NO;
-    doubleValF.minimumSignificantDigits = n;
-    doubleValF.maximumSignificantDigits = n;
-    doubleValF.usesSignificantDigits = YES;
-    
-    NSNumber *numberDouble = [NSNumber numberWithDouble:num];
-    NSString *stringDouble = [doubleValF stringFromNumber:numberDouble];
-    double retVal = [stringDouble doubleValue];
-    return retVal;
-    */
+     NSNumberFormatter *doubleValF = [[NSNumberFormatter alloc] init];
+     [doubleValF setNumberStyle:NSNumberFormatterDecimalStyle];
+     [doubleValF setRoundingMode:NSNumberFormatterRoundHalfUp];
+     
+     doubleValF.usesGroupingSeparator = NO;
+     doubleValF.minimumSignificantDigits = n;
+     doubleValF.maximumSignificantDigits = n;
+     doubleValF.usesSignificantDigits = YES;
+     
+     NSNumber *numberDouble = [NSNumber numberWithDouble:num];
+     NSString *stringDouble = [doubleValF stringFromNumber:numberDouble];
+     double retVal = [stringDouble doubleValue];
+     return retVal;
+     */
 }
 
 -(void) textChanged:(NSNotification *) notification
@@ -211,6 +198,12 @@
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     [cell setHighlighted:YES];
 }
+
+#pragma mark - Split View Delegate
+- (bool) splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation {
+    return NO;
+}
+
 /*
 #pragma mark - Navigation
 
@@ -221,44 +214,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-#pragma mark Google Ad Delegate
-
-- (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error
-{
-    NSLog(@"%@", error);
-}
-
-- (void)adViewDidReceiveAd:(GADBannerView *)bannerView {
-    //[UIView beginAnimations:@"BannerSlide" context:nil];
-    static bool frameSizeAdjusted = NO;
-    if (!frameSizeAdjusted){
-        bannerView.frame = CGRectMake(self.view.frame.size.width,
-                                      self.view.frame.size.height - self.bannerAd.frame.size.height,
-                                      bannerView.frame.size.width,
-                                      bannerView.frame.size.height);
-        
-        NSLog(@"TableView Frame: %@", NSStringFromCGRect(self.tableView.frame));
-        
-        CGRect tableFrame = self.tableView.frame;
-        tableFrame.size.height = tableFrame.size.height - self.bannerAd.frame.size.height;
-        
-        [UIView animateWithDuration:0.5
-                              delay:0.0
-                            options:UIViewAnimationOptionCurveEaseInOut
-                         animations:^{
-                             self.tableView.frame = tableFrame;
-                             [self.bannerAd setTransform:CGAffineTransformMakeTranslation(-self.view.frame.size.width, 0)];
-                         }
-                         completion:^(BOOL finished) {
-                             frameSizeAdjusted = YES;
-                             NSLog(@"TableView Frame: %@", NSStringFromCGRect(self.tableView.frame));
-                         }
-         ];
-    }
-    
-    //[UIView commitAnimations];
-}
-
 
 @end

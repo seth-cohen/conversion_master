@@ -7,11 +7,28 @@
 //
 
 #import "FTAppDelegate.h"
+#import "FTUnitSelectIpadViewController.h"
+#import "FTConversionIpadViewController.h"
 
 @implementation FTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // check if the app is running on an IPAD
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
+        // set up the splitViewController
+        UISplitViewController *splitController = (UISplitViewController *) self.window.rootViewController;
+        UINavigationController *navLeftController = (UINavigationController *) [splitController.viewControllers objectAtIndex:0];
+        UINavigationController *navRightController = (UINavigationController *) [splitController.viewControllers objectAtIndex:1];
+        
+        // get the left and right view controllers and set the delegate for item selection
+        FTUnitSelectIpadViewController *unitController = (FTUnitSelectIpadViewController *) navLeftController.topViewController;
+        FTConversionIpadViewController *convertController = (FTConversionIpadViewController *) navRightController.topViewController;
+        
+        unitController.delegate = convertController;
+        splitController.delegate = convertController;
+    }
+    
     return YES;
 }
 

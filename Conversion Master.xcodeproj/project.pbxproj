@@ -24,6 +24,11 @@
 		5D0BCFAE195785740065FFA4 /* FTUnitSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */; };
 		5D0BCFB91957BC4B0065FFA4 /* FTConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */; };
 		5D0BCFBD1957D39A0065FFA4 /* FTGainConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */; };
+		5D372C6C1962377900FD9FE8 /* Main~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D372C6B1962377900FD9FE8 /* Main~ipad.storyboard */; };
+		5D372C6F1964DEA300FD9FE8 /* FTUnitSelectIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D372C6E1964DEA300FD9FE8 /* FTUnitSelectIpadViewController.m */; };
+		5D372C721965FE9500FD9FE8 /* FTUnitSelectIpadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D372C711965FE9500FD9FE8 /* FTUnitSelectIpadCell.m */; };
+		5D372C77196637BF00FD9FE8 /* FTUnitSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D372C76196637BF00FD9FE8 /* FTUnitSelector.m */; };
+		5D372C7A1966444B00FD9FE8 /* FTConversionIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D372C791966444B00FD9FE8 /* FTConversionIpadViewController.m */; };
 		5DE6125A19590AEC0060B807 /* acceleration_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6124419590AEC0060B807 /* acceleration_data.plist */; };
 		5DE6125B19590AEC0060B807 /* angle_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6124519590AEC0060B807 /* angle_data.plist */; };
 		5DE6125C19590AEC0060B807 /* area_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6124619590AEC0060B807 /* area_data.plist */; };
@@ -106,6 +111,16 @@
 		5D0BCFBA1957D1E00065FFA4 /* FTConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConverter.h; sourceTree = "<group>"; };
 		5D0BCFBB1957D39A0065FFA4 /* FTGainConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGainConverter.h; sourceTree = "<group>"; };
 		5D0BCFBC1957D39A0065FFA4 /* FTGainConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGainConverter.m; sourceTree = "<group>"; };
+		5D372C6B1962377900FD9FE8 /* Main~ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main~ipad.storyboard"; sourceTree = "<group>"; };
+		5D372C6D1964DEA300FD9FE8 /* FTUnitSelectIpadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUnitSelectIpadViewController.h; sourceTree = "<group>"; };
+		5D372C6E1964DEA300FD9FE8 /* FTUnitSelectIpadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUnitSelectIpadViewController.m; sourceTree = "<group>"; };
+		5D372C701965FE9500FD9FE8 /* FTUnitSelectIpadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUnitSelectIpadCell.h; sourceTree = "<group>"; };
+		5D372C711965FE9500FD9FE8 /* FTUnitSelectIpadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUnitSelectIpadCell.m; sourceTree = "<group>"; };
+		5D372C7419662F7400FD9FE8 /* FTUnitSelectDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUnitSelectDelegate.h; sourceTree = "<group>"; };
+		5D372C75196637BF00FD9FE8 /* FTUnitSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUnitSelector.h; sourceTree = "<group>"; };
+		5D372C76196637BF00FD9FE8 /* FTUnitSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUnitSelector.m; sourceTree = "<group>"; };
+		5D372C781966444B00FD9FE8 /* FTConversionIpadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversionIpadViewController.h; sourceTree = "<group>"; };
+		5D372C791966444B00FD9FE8 /* FTConversionIpadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversionIpadViewController.m; sourceTree = "<group>"; };
 		5DE6124419590AEC0060B807 /* acceleration_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = acceleration_data.plist; sourceTree = "<group>"; };
 		5DE6124519590AEC0060B807 /* angle_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = angle_data.plist; sourceTree = "<group>"; };
 		5DE6124619590AEC0060B807 /* area_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area_data.plist; sourceTree = "<group>"; };
@@ -240,14 +255,16 @@
 		5D0BCF7B19577AB30065FFA4 /* Conversion Master */ = {
 			isa = PBXGroup;
 			children = (
+				5D372C7319662AED00FD9FE8 /* ConversionControllers */,
 				5DE612A1195FA7AE0060B807 /* Google Ads */,
-				5DE6129C195E72430060B807 /* Controllers */,
+				5DE6129C195E72430060B807 /* UnitSelectControllers */,
 				5DE6129D195E72710060B807 /* Converters */,
 				5DE6129E195E72900060B807 /* Keyboard */,
 				5D0BCF8419577AB30065FFA4 /* FTAppDelegate.h */,
 				5D0BCF8519577AB30065FFA4 /* FTAppDelegate.m */,
 				5D0BCF8719577AB30065FFA4 /* Images.xcassets */,
 				5D0BCFA719577B6D0065FFA4 /* Main.storyboard */,
+				5D372C6B1962377900FD9FE8 /* Main~ipad.storyboard */,
 				5D0BCF7C19577AB30065FFA4 /* Supporting Files */,
 			);
 			path = "Conversion Master";
@@ -312,6 +329,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5D372C7319662AED00FD9FE8 /* ConversionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE61270195B45FE0060B807 /* FTConversionCell.h */,
+				5DE61271195B45FE0060B807 /* FTConversionCell.m */,
+				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
+				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
+				5D372C781966444B00FD9FE8 /* FTConversionIpadViewController.h */,
+				5D372C791966444B00FD9FE8 /* FTConversionIpadViewController.m */,
+			);
+			name = ConversionControllers;
+			sourceTree = "<group>";
+		};
 		5DE61286195CFD530060B807 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,19 +356,22 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		5DE6129C195E72430060B807 /* Controllers */ = {
+		5DE6129C195E72430060B807 /* UnitSelectControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5DE61270195B45FE0060B807 /* FTConversionCell.h */,
-				5DE61271195B45FE0060B807 /* FTConversionCell.m */,
-				5D0BCFB71957BC4B0065FFA4 /* FTConversionViewController.h */,
-				5D0BCFB81957BC4B0065FFA4 /* FTConversionViewController.m */,
+				5D372C75196637BF00FD9FE8 /* FTUnitSelector.h */,
+				5D372C76196637BF00FD9FE8 /* FTUnitSelector.m */,
 				5D0BCFAC195785740065FFA4 /* FTUnitSelectCell.h */,
 				5D0BCFAD195785740065FFA4 /* FTUnitSelectCell.m */,
+				5D372C701965FE9500FD9FE8 /* FTUnitSelectIpadCell.h */,
+				5D372C711965FE9500FD9FE8 /* FTUnitSelectIpadCell.m */,
+				5D372C6D1964DEA300FD9FE8 /* FTUnitSelectIpadViewController.h */,
+				5D372C6E1964DEA300FD9FE8 /* FTUnitSelectIpadViewController.m */,
 				5D0BCFA419577B380065FFA4 /* FTUnitSelectViewController.h */,
 				5D0BCFA519577B380065FFA4 /* FTUnitSelectViewController.m */,
+				5D372C7419662F7400FD9FE8 /* FTUnitSelectDelegate.h */,
 			);
-			name = Controllers;
+			name = UnitSelectControllers;
 			sourceTree = "<group>";
 		};
 		5DE6129D195E72710060B807 /* Converters */ = {
@@ -473,6 +506,7 @@
 				5DE6126219590AEC0060B807 /* length_data.plist in Resources */,
 				5DE6126319590AEC0060B807 /* light_data.plist in Resources */,
 				5D0BCFA819577B6D0065FFA4 /* Main.storyboard in Resources */,
+				5D372C6C1962377900FD9FE8 /* Main~ipad.storyboard in Resources */,
 				5D0BCF8019577AB30065FFA4 /* InfoPlist.strings in Resources */,
 				5DE6126019590AEC0060B807 /* flow_data.plist in Resources */,
 				5D0BCF8819577AB30065FFA4 /* Images.xcassets in Resources */,
@@ -514,9 +548,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D372C7A1966444B00FD9FE8 /* FTConversionIpadViewController.m in Sources */,
 				5D0BCF8619577AB30065FFA4 /* FTAppDelegate.m in Sources */,
+				5D372C721965FE9500FD9FE8 /* FTUnitSelectIpadCell.m in Sources */,
 				5D0BCF8219577AB30065FFA4 /* main.m in Sources */,
 				5DE61274195B86D40060B807 /* FTConverter.m in Sources */,
+				5D372C77196637BF00FD9FE8 /* FTUnitSelector.m in Sources */,
+				5D372C6F1964DEA300FD9FE8 /* FTUnitSelectIpadViewController.m in Sources */,
 				5D0BCFA619577B380065FFA4 /* FTUnitSelectViewController.m in Sources */,
 				5D0BCFBD1957D39A0065FFA4 /* FTGainConverter.m in Sources */,
 				5DE61272195B45FE0060B807 /* FTConversionCell.m in Sources */,
@@ -648,11 +686,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"/Users/seth/Documents/iOS apps/GAdSDK\"",
+					"\"/Users/seth/Documents/mobile_development/iOS apps/GAdSDK\"",
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -669,11 +707,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"/Users/seth/Documents/iOS apps/GAdSDK\"",
+					"\"/Users/seth/Documents/mobile_development/iOS apps/GAdSDK\"",
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

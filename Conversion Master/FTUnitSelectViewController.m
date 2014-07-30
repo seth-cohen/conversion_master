@@ -8,9 +8,10 @@
 
 #import "FTUnitSelectViewController.h"
 #import "FTConversionViewController.h"
+#import "FTUnitSelector.h"
 
 @interface FTUnitSelectViewController ()
-
+@property FTUnitSelector *unitSelector;
 @end
 
 @implementation FTUnitSelectViewController
@@ -27,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Create a view of the standard size at the top of the screen.
+    // Create a view of the standard size at the bottom of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     self.bannerAd = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     
@@ -48,7 +49,7 @@
     self.bannerAd.delegate = self;
     [self.bannerAd loadRequest:request];
     
-    [self loadInitialData];
+    self.unitSelector = [FTUnitSelector newUnitSelectorFromPlist:@"unit_types"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,37 +64,11 @@
         FTConversionViewController *destination = (FTConversionViewController *) [segue destinationViewController];
         
         NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
-        NSString *selectedItem = self.unitTypes[indexPath.row];
+        NSString *selectedItem = [self.unitSelector unitAtIndex:indexPath.row];
         
         NSLog(@"Selected Item Name: %@", selectedItem);
         destination.currentUnitType = selectedItem;
     }
-}
-
-#pragma mark - 
-
-- (void) loadInitialData
-{
-    self.unitTypes = [[NSMutableArray alloc] init];
-    
-    NSError *error = nil;
-    NSURL *resourceFile = [[NSBundle mainBundle] URLForResource:@"unit_types" withExtension:@"plist"];
-    
-    NSData *resourceData = [NSData dataWithContentsOfURL:resourceFile options:0 error:&error];
-    if (resourceData) {
-        NSDictionary* resources = [NSPropertyListSerialization propertyListWithData:resourceData options:0 format:NULL error:&error];
-        if (resources) {
-            NSArray* myArray = resources[@"unitTypeArray"];
-            for (NSString *name in myArray) {
-                [self.unitTypes addObject:name];
-            }
-        } else {
-            NSLog(@"Error: Could not read plist data from %@: %@", resourceFile, error);
-        }
-    } else {
-        NSLog(@"Error: Could not read file data at %@: %@", resourceFile, error);
-    }
-
 }
 
 
@@ -106,7 +81,7 @@
 
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [self.unitTypes count];
+    return [self.unitSelector countOfUnitTypes];
 }
 
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -115,7 +90,7 @@
                                     dequeueReusableCellWithReuseIdentifier:@"TypeCell"
                                     forIndexPath:indexPath];
     
-    cell.label.text = [self.unitTypes objectAtIndex:indexPath.row];
+    cell.label.text = [self.unitSelector unitAtIndex:indexPath.row];
     return cell;
 }
 
@@ -130,7 +105,6 @@
     //[UIView beginAnimations:@"BannerSlide" context:nil];
     static bool frameSizeAdjusted = NO;
     if (!frameSizeAdjusted){
-        frameSizeAdjusted = YES;
         bannerView.frame = CGRectMake(self.view.frame.size.width,
                                       self.view.frame.size.height - self.bannerAd.frame.size.height,
                                       bannerView.frame.size.width,
@@ -147,7 +121,7 @@
                              [self.bannerAd setTransform:CGAffineTransformMakeTranslation(-self.view.frame.size.width, 0)];
                          }
                          completion:^(BOOL finished) {
-                             // do something
+                             frameSizeAdjusted = YES;
                          }
          ];
     }
