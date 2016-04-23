@@ -226,7 +226,7 @@
 
 - (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error
 {
-    NSLog(@"%@", error);
+    NSLog(@"%@",error);
 }
 
 - (void)adViewDidReceiveAd:(GADBannerView *)bannerView {
